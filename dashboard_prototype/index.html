@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>KETE Smart Gardening Prototype</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="index-container">
+        <div class="index-dashboardeingerichtet">
+          <img
+            alt="Rectangle351801"
+            src="public/playground_assets/rectangle351801-y6vu-400h.png"
+            class="index-rectangle35"
+          />
+          <span class="index-text"><span>Tagesverlauf</span></span>
+          <span class="index-text002"><span>Sonnenstand</span></span>
+          <img
+            alt="Rectangle1071801"
+            src="public/playground_assets/rectangle1071801-55s-200h.png"
+            class="index-rectangle107"
+          />
+          <div class="index-verwalten">
+            <img
+              alt="VectorIconI180"
+              src="public/playground_assets/vectoriconi180-n18.svg"
+              class="index-vector-icon"
+            />
+            <span class="index-text004"><span>Verwalten</span></span>
+          </div>
+          <div class="index-sonnenaugfang">
+            <img
+              alt="Rectangle46I180"
+              src="public/playground_assets/rectangle46i180-1r-400w.png"
+              class="index-rectangle46"
+            />
+          </div>
+          <img
+            alt="Rectangle411801"
+            src="public/playground_assets/rectangle411801-29fe-700w.png"
+            class="index-rectangle41"
+          />
+          <img
+            alt="Rectangle971801"
+            src="public/playground_assets/rectangle971801-11nh-300h.png"
+            class="index-rectangle97"
+          />
+          <img
+            alt="Rectangle1031801"
+            src="public/playground_assets/rectangle1031801-lwo-600w.png"
+            class="index-rectangle103"
+          />
+          <img
+            alt="Rectangle1151801"
+            src="public/playground_assets/rectangle1151801-f4rj-200h.png"
+            class="index-rectangle115"
+          />
+          <span class="index-text006">
+            <span>Übersteuerung durch Wetter:</span>
+          </span>
+          <img
+            alt="Rectangle1161801"
+            src="public/playground_assets/rectangle1161801-en4j-200h.png"
+            class="index-rectangle116"
+          />
+          <img
+            alt="Rectangle1171801"
+            src="public/playground_assets/rectangle1171801-clco-200h.png"
+            class="index-rectangle117"
+          />
+          <img
+            alt="Rectangle1181801"
+            src="public/playground_assets/rectangle1181801-eq97-200h.png"
+            class="index-rectangle118"
+          />
+          <span class="index-text008"><span>Ein</span></span>
+          <span class="index-text010"><span>Aus</span></span>
+          <img
+            alt="Rectangle1101801"
+            src="public/playground_assets/rectangle1101801-7sz3-200h.png"
+            class="index-rectangle110"
+          />
+          <span class="index-text012">
+            <span>
+              <span>Dauer:</span>
+              <br />
+              <span>15 Min</span>
+            </span>
+          </span>
+          <img
+            alt="Rectangle1091801"
+            src="public/playground_assets/rectangle1091801-s7o-200h.png"
+            class="index-rectangle109"
+          />
+          <span class="index-text017">
+            <span>
+              <span>Zeit:</span>
+              <br />
+              <span>20.00 Uhr</span>
+            </span>
+          </span>
+          <img
+            alt="Rectangle1041801"
+            src="public/playground_assets/rectangle1041801-h1zx-200h.png"
+            class="index-rectangle104"
+          />
+          <span class="index-text022"><span>Sensor</span></span>
+          <span class="index-text024"><span>Aktuelles Wetter</span></span>
+          <span class="index-text026"><span>Bewässerungsprogramm</span></span>
+          <span class="index-text028"><span>Manuelle Bewässerung</span></span>
+          <img
+            alt="Rectangle961801"
+            src="public/playground_assets/rectangle961801-g1jo-300h.png"
+            class="index-rectangle96"
+          />
+          <img
+            alt="Rectangle991801"
+            src="public/playground_assets/rectangle991801-e8gl-200h.png"
+            class="index-rectangle99"
+          />
+          <img
+            alt="Rectangle981801"
+            src="public/playground_assets/rectangle981801-j1id-200h.png"
+            class="index-rectangle98"
+          />
+          <span class="index-text030"><span>Wetter Walenstadt</span></span>
+          <span class="index-text032"><span>Hochbeet</span></span>
+          <div class="index-frame1">
+            <div class="index-logo1">
+              <img
+                alt="VectorI180"
+                src="public/playground_assets/vectori180-kkg.svg"
+                class="index-vector"
+              />
+              <div class="index-frameiconwifi">
+                <div class="index-group">
+                  <img
+                    alt="VectorI180"
+                    src="public/playground_assets/vectori180-btfh.svg"
+                    class="index-vector1"
+                  />
+                  <img
+                    alt="VectorI180"
+                    src="public/playground_assets/vectori180-pna.svg"
+                    class="index-vector2"
+                  />
+                  <img
+                    alt="VectorI180"
+                    src="public/playground_assets/vectori180-vlym.svg"
+                    class="index-vector3"
+                  />
+                  <img
+                    alt="VectorI180"
+                    src="public/playground_assets/vectori180-w47.svg"
+                    class="index-vector4"
+                  />
+                </div>
+              </div>
+              <div class="index-frameiconshare">
+                <img
+                  alt="VectorI180"
+                  src="public/playground_assets/vectori180-87ep.svg"
+                  class="index-vector5"
+                />
+              </div>
+              <div class="index-aloe-vera-bild">
+                <div class="index-shadowweit">
+                  <img
+                    alt="Ellipse1I180"
+                    src="public/playground_assets/ellipse1i180-h8wx-200h.png"
+                    class="index-ellipse1"
+                  />
+                  <img
+                    alt="Ellipse2I180"
+                    src="public/playground_assets/ellipse2i180-oix-200h.png"
+                    class="index-ellipse2"
+                  />
+                </div>
+                <img
+                  alt="Rectangle34I180"
+                  src="public/playground_assets/rectangle34i180-de3r-200w.png"
+                  class="index-rectangle34"
+                />
+              </div>
+            </div>
+            <span class="index-text034"><span>Smart Gardening</span></span>
+            <span class="index-text036"><span>Dashboard</span></span>
+            <span class="index-text038"><span>Geräte verwalten</span></span>
+            <img
+              alt="VectorIconI180"
+              src="public/playground_assets/vectoriconi180-91ki.svg"
+              class="index-vector-icon1"
+            />
+            <img
+              alt="IconsaxBoldblurI180"
+              src="public/playground_assets/iconsaxboldbluri180-zgk5.svg"
+              class="index-iconsax-boldblur"
+            />
+            <img
+              alt="image1I180"
+              src="public/playground_assets/image1i180-evsd-200h.png"
+              class="index-image1"
+            />
+          </div>
+          <div class="index-sonnenaugfang1">
+            <img
+              alt="Rectangle46I180"
+              src="public/playground_assets/rectangle46i180-rha-200w.png"
+              class="index-rectangle461"
+            />
+            <span class="index-text040"><span>6.28Uhr</span></span>
+            <span class="index-text042"><span>Sonnenaufgang</span></span>
+            <span class="index-text044">
+              <span>
+                <span>Sonnenuntergang</span>
+                <br />
+                <span>18.20 Uhr</span>
+              </span>
+            </span>
+            <img
+              alt="VectorI180"
+              src="public/playground_assets/vectori180-qjf9.svg"
+              class="index-vector6"
+            />
+            <img
+              alt="EllipseI180"
+              src="public/playground_assets/ellipsei180-9yde-200h.png"
+              class="index-ellipse"
+            />
+            <img
+              alt="LineI180"
+              src="public/playground_assets/linei180-7381j.svg"
+              class="index-line"
+            />
+          </div>
+          <div class="index-sonnenaugfang2">
+            <img
+              alt="Rectangle46I180"
+              src="public/playground_assets/rectangle46i180-04li-400w.png"
+              class="index-rectangle462"
+            />
+          </div>
+          <img
+            alt="Rectangle931801"
+            src="public/playground_assets/rectangle931801-s1ym-200w.png"
+            class="index-rectangle93"
+          />
+          <img
+            alt="Rectangle921801"
+            src="public/playground_assets/rectangle921801-pf3r-200w.png"
+            class="index-rectangle92"
+          />
+          <img
+            alt="Rectangle911801"
+            src="public/playground_assets/rectangle911801-iiyq-200w.png"
+            class="index-rectangle91"
+          />
+          <img
+            alt="Rectangle901801"
+            src="public/playground_assets/rectangle901801-3z2-200w.png"
+            class="index-rectangle90"
+          />
+          <div class="index-tempicon">
+            <div class="index-small-suncloudangledrain">
+              <div class="index-big-suncloudangledrain">
+                <img
+                  alt="SuncloudangledrainI180"
+                  src="public/playground_assets/suncloudangledraini180-hlv-200h.png"
+                  class="index-suncloudangledrain"
+                />
+              </div>
+            </div>
+          </div>
+          <span class="index-text049"><span>Aktiv</span></span>
+          <span class="index-text051 DefaultRegularTitle3">
+            <span>19°</span>
+          </span>
+          <div class="index-tempicon1">
+            <div class="index-small-mooncloudmidrain">
+              <div class="index-big-mooncloudmidrain">
+                <img
+                  alt="MooncloudmidrainI180"
+                  src="public/playground_assets/mooncloudmidraini180-1wjk-200h.png"
+                  class="index-mooncloudmidrain"
+                />
+              </div>
+            </div>
+            <span class="index-text053 DefaultBoldFootnote">
+              <span>30 %</span>
+            </span>
+          </div>
+          <span class="index-text055 DefaultRegularTitle3">
+            <span>20°</span>
+          </span>
+          <div class="index-tempicon2">
+            <div class="index-small-suncloudmidrain">
+              <div class="index-big-suncloudmidrain">
+                <img
+                  alt="SuncloudmidrainI180"
+                  src="public/playground_assets/suncloudmidraini180-ni9r-200h.png"
+                  class="index-suncloudmidrain"
+                />
+              </div>
+            </div>
+          </div>
+          <span class="index-text057"><span>18.00 Uhr</span></span>
+          <span class="index-text059 DefaultRegularTitle3">
+            <span>20°</span>
+          </span>
+          <span class="index-text061"><span>12.00 Uhr</span></span>
+          <span class="index-text063 DefaultRegularTitle3">
+            <span>20°</span>
+          </span>
+          <div class="index-tempicon3">
+            <div class="index-small-mooncloudfastwind">
+              <div class="index-big-mooncloudfastwind">
+                <img
+                  alt="MooncloudfastwindI180"
+                  src="public/playground_assets/mooncloudfastwindi180-rrjy-200h.png"
+                  class="index-mooncloudfastwind"
+                />
+              </div>
+            </div>
+          </div>
+          <span class="index-text065"><span>00.00 Uhr</span></span>
+          <div class="index-begaluru-default">
+            <img
+              alt="Rectangle6I180"
+              src="public/playground_assets/rectangle6i180-v5em.svg"
+              class="index-rectangle6"
+            />
+            <img
+              alt="MooncloudmidrainI180"
+              src="public/playground_assets/mooncloudmidraini180-ig8-200w.png"
+              class="index-mooncloudmidrain1"
+            />
+            <span class="index-text067"><span>19°</span></span>
+            <span class="index-text069"><span>Walenstadt, Schweiz</span></span>
+            <span class="index-text071"><span>Regen</span></span>
+          </div>
+          <span class="index-text073"><span>06.00 Uhr</span></span>
+          <span class="index-text075"><span>Art: Bodenfeuchte</span></span>
+          <img
+            alt="Rectangle1001801"
+            src="public/playground_assets/rectangle1001801-t9tn-200h.png"
+            class="index-rectangle100"
+          />
+          <span class="index-text077">
+            <span class="index-text078">Wert:</span>
+            <span>65%</span>
+          </span>
+          <img
+            alt="Rectangle1011801"
+            src="public/playground_assets/rectangle1011801-rqr4-200h.png"
+            class="index-rectangle101"
+          />
+          <img
+            alt="Rectangle1081801"
+            src="public/playground_assets/rectangle1081801-28y-200h.png"
+            class="index-rectangle108"
+          />
+          <span class="index-text080">
+            <span>
+              <span>Datum:</span>
+              <br />
+              <span>Heute</span>
+            </span>
+          </span>
+          <img
+            alt="Rectangle1051801"
+            src="public/playground_assets/rectangle1051801-5ud8-200h.png"
+            class="index-rectangle105"
+          />
+          <img
+            alt="Rectangle1251801"
+            src="public/playground_assets/rectangle1251801-ycp-200h.png"
+            class="index-rectangle125"
+          />
+          <span class="index-text085">
+            <span>Nächster Bewässerungsdurchgang</span>
+          </span>
+          <img
+            alt="Rectangle1111801"
+            src="public/playground_assets/rectangle1111801-3tak-200h.png"
+            class="index-rectangle111"
+          />
+          <span class="index-text087">
+            <span>Übersteuerung durch Sensor:</span>
+          </span>
+          <img
+            alt="Rectangle1021801"
+            src="public/playground_assets/rectangle1021801-ub9q-200h.png"
+            class="index-rectangle102"
+          />
+          <img
+            alt="Rectangle1061801"
+            src="public/playground_assets/rectangle1061801-y4jk-200h.png"
+            class="index-rectangle106"
+          />
+          <div class="index-verwalten1">
+            <img
+              alt="VectorIconI180"
+              src="public/playground_assets/vectoriconi180-boy8.svg"
+              class="index-vector-icon2"
+            />
+            <span class="index-text089"><span>Details</span></span>
+          </div>
+          <div class="index-verwalten2">
+            <img
+              alt="VectorIconI180"
+              src="public/playground_assets/vectoriconi180-5dzs.svg"
+              class="index-vector-icon3"
+            />
+            <span class="index-text091"><span>Verwalten</span></span>
+          </div>
+          <img
+            alt="Rectangle1131801"
+            src="public/playground_assets/rectangle1131801-rct4-200h.png"
+            class="index-rectangle113"
+          />
+          <span class="index-text093">
+            <span>
+              <span>Dauer in Min:</span>
+              <br />
+              <span></span>
+            </span>
+          </span>
+          <img
+            alt="Rectangle1141801"
+            src="public/playground_assets/rectangle1141801-eoor-200h.png"
+            class="index-rectangle114"
+          />
+          <span class="index-text098"><span>Ein</span></span>
+          <span class="index-text100"><span>Aus</span></span>
+          <span class="index-text102"><span>Status: Aktiv</span></span>
+          <img
+            alt="Rectangle1221801"
+            src="public/playground_assets/rectangle1221801-57xt-200h.png"
+            class="index-rectangle122"
+          />
+          <span class="index-text104"><span>...</span></span>
+          <img
+            alt="Polygon11801"
+            src="public/playground_assets/polygon11801-g7sq.svg"
+            class="index-polygon1"
+          />
+          <button autofocus="true" class="index-start-btn button"  onclick="startWatering()">Start</button>
+          <button class="index-start-btn1 button"  onclick="stopWatering()">Stop</button>
+          <script>
+            function startWatering() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        alert(this.responseText);
+                    }
+                };
+                xhttp.open("POST", "http://192.168.0.164:5000/data", true);
+                xhttp.setRequestHeader("Content-Type", "application/json");
+                
+                var payload = {
+                        'sensor_id': 10000,
+                        'sensor_name': "Sensor 1",
+                        'user_id' : 1465214,
+                        'action' : 'start',
+                };
+                xhttp.send(JSON.stringify(payload));
+            }
+
+            function stopWatering() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        alert(this.responseText);
+                    }
+                };
+                xhttp.open("POST", "http://192.168.0.164:5000/data", true);
+                xhttp.setRequestHeader("Content-Type", "application/json");
+                
+                var payload = {
+                        'sensor_id': 10000,
+                        'sensor_name': "Sensor 1",
+                        'user_id' : 1465214,
+                        'action' : 'stop',
+                };
+                xhttp.send(JSON.stringify(payload));
+            }
+            </script>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
