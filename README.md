@@ -23,7 +23,7 @@ Payload: <br>
 Betreibt die Bewässerungsanlage automatisch. Das heisst, dass sobald der Feuchtigkeitssensor einen Wert unter 30% liefert, wird die Bewässerungsanlage für 2 Sekunden getätigt. Der Feuchtigskeitssensor misst jede Sekunde. <br>
 Die Sensordaten werden an eine Firebase Realtime Database gesender, wo diese vom Dashboard konsumiert werden kann.
 
-<br><br>
+<br>
 
 
 
