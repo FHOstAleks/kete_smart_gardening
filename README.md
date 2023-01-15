@@ -31,3 +31,8 @@ Die Sensordaten werden an eine Firebase Realtime Database gesender, wo diese vom
 Bilder des Tests sind im Ordner media zu finden.
 Das Video zum Test ist unter folgendem Link verfügbar: https://1drv.ms/v/s!AivE33WXfMsFlL13WFr03nrgVOGF0A?e=1P42fa
 
+## Miroboard
+https://miro.com/app/board/uXjVP2OfgSI=/?share_link_id=385048494143
+
+## Figma
+https://www.figma.com/file/wQqBGSsTAmPC8YFmISoQib/Smart-Gardening-Final-Mockup?t=2PqCXXnDRV1ElMlQ-1
