@@ -8,7 +8,7 @@ Es ist zu beachten, dass dieser Prototyp nur mit derselben Hardware (Raspberry P
 Die selbst geschriebenen Programme sind folgende:
 
 ### kete_controller_prototype_dashboard_manuell.py
-Öffnet einen Flask REST-API Server der im lokal Netz erreichbar ist. <br>
+Öffnet einen Flask REST-API Server der im lokalen Netz erreichbar ist. <br>
 Beispielsaufruf: <br>
 Aufruf: http://192.168.0.164:5000/data <br>
 Payload: <br>
